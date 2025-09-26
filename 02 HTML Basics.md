@@ -98,3 +98,24 @@
 
 <img width="1189" height="352" alt="image" src="https://github.com/user-attachments/assets/31b660f8-bbef-4c4b-84fc-d33578549bee" />
 
+
+## How a client can make request to a server ??
+
+1) Form Submit
+
+2) AJAX Call
+
+3) Plain HTTP Request
+
+
+### Form  Submit
+
+We have FORM + SUBMIT Hence its called ad Form Submit:
+
+ex:
+
+<img width="1159" height="486" alt="image" src="https://github.com/user-attachments/assets/e3180517-7163-4ea7-a73a-6a3ff0d9a025" />
+
+#### also when we click submit, it will navigate to a website ..
+
+
