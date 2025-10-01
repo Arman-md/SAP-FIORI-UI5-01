@@ -119,3 +119,44 @@ ex:
 #### also when we click submit, it will navigate to a website ..
 
 
+### AJAX Call
+
+### Plain HTTP Request
+
+
+## List control
+
+### Ordered list and i frame
+
+``` html
+
+    <!-- Ordered and Unordered list -->
+    <ol>
+        <a href="https://www.armani.com/ja-jp/">
+            <li>Armani</li>
+        </a>
+        <a href="https://www.adidas.com/us/men">
+            <li>Adidas</li>
+        </a>
+        <li>Organge</li>
+    </ol>
+
+    <ul>
+        <li>Arman</li>
+        <li>Madhu</li>
+    </ul>
+
+    <audio src="https://mr-jat.in/dlod/4307?&volume=75&showstop=1&showvolume=1" controls> Tu jo mila AUDIO </audio>
+    <!-- Video also can be integrated -->
+
+    <!-- I FRAME to integrate some web content -->
+    <iframe src="https://youtu.be/6DCOjq0omBc?si=O0SYj1_j3T-9aClz">tu Jo mila video</iframe>
+</body>
+
+```
+
+
+
+
+
+
