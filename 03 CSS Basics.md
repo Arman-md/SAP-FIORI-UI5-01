@@ -100,6 +100,9 @@ ex:
 
 ### External 
 
+we create CSS style File outside and we link it with our HTML file
+
+
 
 ## Box Model
 
@@ -175,6 +178,34 @@ output :
 
 <img width="1643" height="1019" alt="image" src="https://github.com/user-attachments/assets/5ddf6e33-1ab2-4b35-9af8-b60b62657173" />
 
+
+## Pseudo Classes
+
+-> are used to apply the conditional styling on the elements
+ex: when user hover mouse on a image, then consitional styling can be applied
+
+syntax :
+
+``` html
+selector: pseudoclass{
+prop: val;
+}
+
+```
+
+
+ex:
+
+``` html
+
+        .container img:hover {
+            transform: scale(1.05);
+            border: 3px solid red;
+        }
+```
+
+
+![Uploading image.png…]()
 
 
 
