@@ -1,6 +1,104 @@
-# CSS
+# CSS Cascading Style Sheets : born to simplify the styling of webpage( beutify our html page ) in more modular way...!
 
 <img width="1201" height="599" alt="image" src="https://github.com/user-attachments/assets/53f4a960-4551-45da-95e0-6d9185ad305f" />
+
+## Applying CSS:
+
+
+### Inline-> styling at tag level using : style property and value ( not resusable )
+<tagname style="prop:value;prop:value;prop:value"> </tagname>
+
+### Internal-> style code applied at page level using style prop. usually in the header, and we use a selector(identifier)
+
+#### selectors:
+-> tagname : applies to each tag and its tagspecific
+-> .className : classification property additionally specified to group our elements or a particular catrgory
+-> #id : eevery html element will have a unique id 
+
+<style>
+
+selector{
+    prop:value;
+    prop:value;
+    ....
+    }
+</style>
+
+ex:
+
+``` html
+
+<head>
+    <style>
+        h3{
+            color: blue;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body style="background-color: aqua;">
+    <!-- heading tags -->
+    <h1>Welcome to HTML5</h1>
+    <h2>Welcome to HTML5</h2>
+
+    <h3>Welcome to HTML5</h3>
+
+    <h3>Welcome to Earth</h3>
+    <br>
+    <input id="fn">
+    <label> FIRST NAME </label>
+    <br>
+    <h4>Welcome to HTML5</h4>
+</body>
+```
+
+#### CLassification of tags while applying properties : Block level elements
+-> they themseleves dont have footprints on the page but used to structure the hml elements
+
+1) DIV - always starts from new line ( used to group family of elements together )
+
+-> avengers style will be applied in div avengers family( to all children)
+``` html
+<head>
+ <style>
+        .avengers {
+            color: blue;
+            border: 2px solid black;
+        }
+
+        #fn {
+            background-color: black;
+            color: beige;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body style="background-color: aqua;">
+    <div class="avengers">
+        <div class="Iron man">
+            <h3>Welcome Ironman</h3>
+        </div>
+
+        <div class="hulk">
+            <h3>Welcome Hulk</h3>
+        </div>
+
+        <div class="spiderman">
+            <h3>Welcome Spidey</h3>
+        </div>
+    </div>
+ <input id="fn">
+    <label> FIRST NAME </label>
+    <br>
+</body>
+```
+
+2) SPAN/Inline elements
+
+
+### External 
 
 
 ## Box Model
