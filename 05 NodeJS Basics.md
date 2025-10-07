@@ -12,6 +12,64 @@
 
 ## 
 
-<img width="1284" height="709" alt="image" src="https://github.com/user-attachments/assets/89eb6e11-3003-4ca6-be5c-ea305a538a0f" />
+<img width="1145" height="643" alt="image" src="https://github.com/user-attachments/assets/4d190e89-cf56-427d-b87b-166ba6ba19d9" />
 
-https://www.npmjs.com/
+## node modules
+
+### https://www.npmjs.com/
+
+
+``` js
+\
+// node js practice :
+// json file java script objects
+// the below is a json 
+module.exports = {
+    printArray: function (arr) {
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            console.log(element);
+
+        }
+    },
+
+    printArrCount: function (arr) {
+        console.log(arr.length);
+
+    },
+
+    calculator: function (opr1, opr2, ope) {
+        switch (ope) {
+            case '+':
+                return opr1 + opr2;
+                break;
+            case '-':
+                return opr1 - opr2;
+                break;
+            case '*':
+                return opr1 * opr2;
+                break;
+            case '/':
+                return opr1 / opr2;
+                break;
+            default:
+                break;
+        }
+    }
+
+}
+
+```
+
+## reuse.js
+<img width="1826" height="940" alt="image" src="https://github.com/user-attachments/assets/4e050427-3e61-45c0-8e16-148ae2b8d4aa" />
+
+
+## index.js
+<img width="1466" height="448" alt="image" src="https://github.com/user-attachments/assets/55a7225a-68cf-46bb-9c01-0c39d856bc35" />
+
+
+
+
+
+
