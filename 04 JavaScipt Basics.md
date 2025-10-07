@@ -75,6 +75,59 @@
 ```
 <img width="1914" height="353" alt="image" src="https://github.com/user-attachments/assets/1387164f-40d5-4107-885a-bde3240ac36b" />
 
+
+``` html
+<html>
+
+<head>
+    <script>
+        // internal JS
+        function showText1() {
+            alert("Welcome to JS1");
+        }
+
+        function showText2() {
+            alert("Welcome to JS2");
+            document.write('<h2> Welcome to JS2 </h2>');// replaces whole dom and writes
+        }
+        function onLogin() {
+            // get object of DOM for respective ids
+            var oUser = document.getElementById("user");
+            var oPwd = document.getElementById("pwd");
+            // get strings ( user name and password ) in a string
+            var sUser = oUser.value;
+            var sPwd = oPwd.value;
+            if (sUser == sPwd) {
+                alert("Dont enter same user name and password...!");
+            } else {
+                document.write('<h2> Login Successful..! </h2>');// replaces whole dom and writes 
+            };
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td><label>User Id </label> </td>
+            <td><input id="user"> </td>
+        </tr>
+        <tr>
+            <td> <label>password</label></td>
+            <td> <input id="pwd" type="password"></td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+        </tr>
+    </table>
+    <button onclick="onLogin()">login</button>
+    <button onclick="showText2()">Click Me2</button>
+</body>
+
+</html>
+
+```
 # debugging in console/ chrome :
 
 
