@@ -134,6 +134,64 @@
 <img width="1932" height="755" alt="image" src="https://github.com/user-attachments/assets/7f7b5316-fc71-4f13-bce2-b9b4f3c8ac2f" />
 
 
+# asynchronous non blocking io
+
+
+## 🚦 Imagine a Traffic Signal System
+### Think of JavaScript as a traffic cop managing cars (tasks) at an intersection.
+
+### Synchronous blocking I/O is like letting one car go at a time, and everyone else has to wait until it's done.
+
+### Asynchronous non-blocking I/O is like having multiple lanes and smart signals that let cars go without waiting, as long as their path is clear.
+
+
+## 🧠 Now, in JavaScript terms:
+
+### ✅ Asynchronous means:
+JavaScript can start a task (like reading a file or calling an API) and move on to the next task without waiting for the first one to finish.
+
+### ✅ Non-blocking I/O means:
+When JavaScript does input/output (like reading a file, fetching data from a server), it doesn't block other code from running while waiting for the result.
+
+## 🔧 How does it work?
+### JavaScript uses:
+
+##### Event Loop: A system that checks if any async task is done and then runs its callback.
+##### Callbacks / Promises / async-await: Ways to handle results later, when they're ready.
+
+
+📦 Example:
+``` js
+
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Async task done!");
+}, 2000); // Simulates a 2-second delay
+
+console.log("End");
+```
+Output:
+
+```
+Start
+End
+Async task done!
+
+```
+
+
+
+### Even though the async task takes 2 seconds, JavaScript doesn't wait. It moves on and comes back when the task is ready.
+
+🧵 Summary:
+
+
+<img width="741" height="194" alt="image" src="https://github.com/user-attachments/assets/2d98fad8-29e2-4393-8837-dae491e52875" />
+
+
+
+
 
 
 
