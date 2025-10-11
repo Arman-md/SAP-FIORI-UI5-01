@@ -193,6 +193,18 @@ Async task done!
 <img width="1199" height="641" alt="image" src="https://github.com/user-attachments/assets/240a4d40-a236-4109-a395-8566f47286da" />
 
 
+## How do display a message after 5 seconds delay,( by passing JS ASYNCH NON BLOCKING IO )?
+
+### ANS : USING A CALLBACK FUNCTION EX:|
+
+<img width="784" height="255" alt="image" src="https://github.com/user-attachments/assets/fc01fcab-d621-49a9-91a0-08e904ac92a0" />
+
+HERE ABOVE, the box is hidden ( faded ) in 5 seconds after that the alert message is displayed...!
+
+
+
+
+
 
 
 
