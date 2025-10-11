@@ -19,4 +19,19 @@ ex:   $(".box-title").css("color", "white").css("background-color", "brown");
 <img width="1118" height="469" alt="image" src="https://github.com/user-attachments/assets/0d258dc6-1705-48e0-97dd-2436135eff64" />
 
 
+## onAnimate function with callback and recursion
+<img width="703" height="516" alt="image" src="https://github.com/user-attachments/assets/1153a3cb-365a-4760-920e-e7b2d6fd49ba" />
 
+
+
+
+## Use jQuery to call external service( WTH API)
+
+# -> ajax call ( async js and xml ) ex: API
+
+# ->  ex: https://covid-api.com/api/regions?per_page=20
+
+Calling any API
+
+
+<img width="1012" height="504" alt="image" src="https://github.com/user-attachments/assets/18381685-8a71-4612-b90c-c65c8c4632bf" />
