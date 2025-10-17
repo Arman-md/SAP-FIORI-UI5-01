@@ -131,3 +131,21 @@ sap.ui.define(["sap/ui/core/mvc/Controller"],
 
 <img width="1242" height="241" alt="image" src="https://github.com/user-attachments/assets/4a06d107-efb0-49fd-9eee-cf83b8c30442" />
 
+
+# Control Hierarchy
+
+<img width="1158" height="676" alt="image" src="https://github.com/user-attachments/assets/b33f6a17-e0d4-429f-b3cc-1e553cca4e45" />
+
+# Basics of OOPS
+
+Inheritance,
+Association -> Aggregation and Composition
+
+
+
+
+
+
+
+
+
