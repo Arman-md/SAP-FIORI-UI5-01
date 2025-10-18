@@ -141,6 +141,9 @@ sap.ui.define(["sap/ui/core/mvc/Controller"],
 Inheritance,
 Association -> Aggregation and Composition
 
+<img width="1191" height="644" alt="image" src="https://github.com/user-attachments/assets/9f864990-bb91-449c-8475-8425099687c3" />
+
+
 
 
 
