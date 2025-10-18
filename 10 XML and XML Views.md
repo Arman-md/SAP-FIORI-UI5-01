@@ -178,6 +178,31 @@ sap.ui.define(["sap/ui/core/mvc/Controller"],
 
 ```
 
+# XML View with aggregation
+
+
+## Task : Simple form control 
+
+<img width="1084" height="471" alt="image" src="https://github.com/user-attachments/assets/e06bdeaa-fc31-4f1f-a54f-7efe6b5d89ae" />
+
+
+<img width="1901" height="706" alt="image" src="https://github.com/user-attachments/assets/5b88c28c-b9d5-4ec2-a984-755836333be8" />
+
+
+<img width="1486" height="752" alt="image" src="https://github.com/user-attachments/assets/9dc391a6-61fa-4534-8578-6a52e92c703f" />
+
+
+<img width="1220" height="665" alt="image" src="https://github.com/user-attachments/assets/fca6479e-4641-48e0-88ef-66a9bb9fb5c2" />
+
+
+<img width="1195" height="363" alt="image" src="https://github.com/user-attachments/assets/3711c1f3-01cb-4b2e-b3b2-5f5dd7c1dce5" />
+
+
+
+
+
+
+
 
 
 
