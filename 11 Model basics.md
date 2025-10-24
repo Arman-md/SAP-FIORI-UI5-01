@@ -16,4 +16,14 @@
 
 
 
+## BINDING( Connecting Model data using xPath using UI Controls so that exchange of data can happen between our modle and the view)
+
+<img width="1183" height="622" alt="image" src="https://github.com/user-attachments/assets/d496900c-8712-451e-822c-260251afb16f" />
+
+
+
+
+
+
+
 
