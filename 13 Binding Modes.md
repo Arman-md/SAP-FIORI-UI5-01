@@ -1,5 +1,7 @@
 # BINDING:
 
+## Property Binding
+
 <img width="1459" height="672" alt="image" src="https://github.com/user-attachments/assets/857463f6-edf7-45c2-877b-679d5f94d107" />
 
 
@@ -22,10 +24,26 @@
 
 
 
-## Expression Binding
-
 ###  Requirement :
 <img width="1458" height="107" alt="image" src="https://github.com/user-attachments/assets/0df3c69b-4ae4-45b4-a4b7-02b71985f84e" />
+
+<img width="1045" height="402" alt="image" src="https://github.com/user-attachments/assets/37c808c6-049e-484e-8601-c3ee8b4a08d3" />
+<img width="865" height="302" alt="image" src="https://github.com/user-attachments/assets/e70a1d64-cd8c-4902-adc3-d8452029e4ac" />
+
+<img width="860" height="120" alt="image" src="https://github.com/user-attachments/assets/882d2361-455b-4c2e-9cbb-5b57bdf41704" />
+
+
+<img width="829" height="335" alt="image" src="https://github.com/user-attachments/assets/76cf8dd7-2a20-4338-9e67-e353fc76c1cf" />
+
+
+
+
+## Expression Binding
+
+### REQUIREMENT :
+
+<img width="1198" height="237" alt="image" src="https://github.com/user-attachments/assets/5e810a3c-78a5-49f9-b326-83a774215344" />
+
 
 
 
