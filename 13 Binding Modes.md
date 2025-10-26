@@ -44,6 +44,14 @@
 
 <img width="1198" height="237" alt="image" src="https://github.com/user-attachments/assets/5e810a3c-78a5-49f9-b326-83a774215344" />
 
+``` xml
+
+            <!-- If we wanna use the another expression, we use $ symbol -->
+            <Input id="idEmpsal"  value = "10000" width="20%"  enabled="{= ${/empStr/empName} === 'Arman' ? false : true}"/>
+
+```
+
+<img width="1170" height="641" alt="image" src="https://github.com/user-attachments/assets/3a191efb-8b89-40fb-88dd-fa626d0e98f0" />
 
 
 
