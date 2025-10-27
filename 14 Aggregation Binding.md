@@ -1,4 +1,4 @@
-# Agggregation BINING
+# Agggregation BINDING
 
 ## Absolute Path annd relative Path
 
