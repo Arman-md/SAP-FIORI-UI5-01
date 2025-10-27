@@ -11,8 +11,13 @@
 
 ## Element Binding
 
+
+
+
 <img width="1203" height="689" alt="image" src="https://github.com/user-attachments/assets/2f0b0424-2219-4aaa-bd95-1959dde898d4" />
 
+
+<img width="1189" height="442" alt="image" src="https://github.com/user-attachments/assets/f2a8937f-6009-4be3-894e-a47b00da62f0" />
 
 
 ### Row selection event upon UI-Row selection
