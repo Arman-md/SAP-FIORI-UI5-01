@@ -1,4 +1,4 @@
-# Formatters ( used for data formatting)
+<img width="1264" height="569" alt="image" src="https://github.com/user-attachments/assets/a2779de0-69e8-43f7-a4e2-506647b630bc" /># Formatters ( used for data formatting)
 
 
 <img width="1188" height="603" alt="image" src="https://github.com/user-attachments/assets/b9e76e11-563f-4e30-b1e0-91c6d811c9e6" />
@@ -18,5 +18,9 @@
 
 ```
 
+## or reuse
 
 
+<img width="1666" height="727" alt="image" src="https://github.com/user-attachments/assets/7f622d75-d8b1-43e4-92ba-8eed7cab04fd" />
+
+<img width="1264" height="569" alt="image" src="https://github.com/user-attachments/assets/70b6cdba-0138-4616-87af-1cea60cadb2d" />
