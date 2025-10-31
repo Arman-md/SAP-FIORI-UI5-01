@@ -8,6 +8,7 @@
 <img width="1174" height="599" alt="image" src="https://github.com/user-attachments/assets/9fb2738b-82f7-4705-9578-bc0ffba594ea" />
 
 
+# SKELETON
 <img width="329" height="475" alt="image" src="https://github.com/user-attachments/assets/685c0501-75ca-4d2a-a03c-2d6d425f8b62" />
 
 ## app.conroller.js
