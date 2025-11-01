@@ -695,6 +695,14 @@ sap.ui.define(
     });
 ```
 
+## Output :
+
+### View 1
+
+<img width="1150" height="641" alt="image" src="https://github.com/user-attachments/assets/ef03e859-3f0f-4d84-b49d-bff4905824cf" />
+
+<img width="1174" height="947" alt="image" src="https://github.com/user-attachments/assets/c736ae61-677b-4980-b4e1-d910f167663a" />
+
 
 
 
