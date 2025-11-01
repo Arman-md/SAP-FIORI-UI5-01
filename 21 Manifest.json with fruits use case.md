@@ -357,5 +357,347 @@ https://sapui5.hana.ondemand.com/#/topic/be0cf40f61184b358b5faedaec98b2da
 <img width="1913" height="890" alt="image" src="https://github.com/user-attachments/assets/d8c7f107-d375-471f-826c-a155b71690f2" />
 
 
+## Perform deletion of items in UI 
+
+``` XML
+ <List id="idList" items="{/fruits}" mode="Delete" delete="onDeleteItem">
+                <items>
+                    <!-- relative bindings in child items -->
+                    <ObjectListItem title="{name}" intro="{type}" number="{price}" numberUnit="{currency}" icon="{image}" id="idListItem"></ObjectListItem>
+                </items>
+            </List>
+
+```
+
+
+``` JS
+                onDeleteItem: function (oEvent) {
+
+                    // on which event the delete was pressed..
+                    var oItem = oEvent.getParameter("listItem"); // correct parameter name
+
+                    // get object of the list conbtrol
+                    var oList = oEvent.getSource();
+
+                    // delete the item 
+                    oList.removeItem(oItem);
+                }
+
+
+```
+
+
+## Search operation in view 1
+
+<img width="1763" height="817" alt="image" src="https://github.com/user-attachments/assets/9d9658f4-4114-4dc2-8a7f-118227f82267" />
+
+view1.xml
+``` xml
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.plansee.coc.bc.controller.View1">
+    <!-- Put APP container control( contains other controls ) -->
+    <Page title="First View" >
+        <content>
+            <!-- <Button text="Next Page" press="onNext"></Button> -->
+            <SearchField id="idSearch" search="onSearch"></SearchField>
+            <!-- {/fruits} - is absolute path in aggregation binding..! -->
+            <List id="idList" items="{/fruits}" mode="Delete" delete="onDeleteItem">
+                <items>
+                    <!-- relative bindings in child items -->
+                    <ObjectListItem title="{name}" intro="{type}" number="{price}" numberUnit="{currency}" icon="{image}" id="idListItem">
+                        <firstStatus>
+                            <ObjectStatus text="{status}" state="{ path: 'status' , formatter: '.formatter.getStatusState' }"></ObjectStatus>
+                        </firstStatus>
+                    </ObjectListItem>
+                </items>
+            </List>
+        </content>
+        <headerContent>
+            <Button icon="sap-icon://initiative" press="onNext" tooltip="Navigate to next sceen"></Button>
+        </headerContent>
+    </Page>
+</mvc:View>
+
+```
+
+## view1.controller.js
+``` js
+//scaffolding
+sap.ui.define(
+
+    [
+        'com/plansee/coc/bc/controller/BaseController',
+        'sap/m/MessageBox',
+        'sap/ui/model/Filter',
+        'sap/ui/model/FilterOperator',
+        'com/plansee/coc/bc/util/formatter'
+    ], function (Controller, MessageBox, Filter, FilterOperator, formatter) {
+        'use strict';
+        return Controller.extend("com.plansee.coc.bc.controller.View1",
+            {
+                formatter: formatter,
+                onInit: function () {
+
+                    // alert("now we have the app contorller for fiori like app");
+
+                },
+
+                onNext: function () {
+                    // navigation is only possible between child views by parent only....!
+
+                    // step 1 : get the object of the currnet view
+                    var oView = this.getView();
+
+                    // step 2 : get the object of the parent view (App) where view1 has been added as child
+                    var oAppCon = oView.getParent();
+
+                    // step 3 : Use this container to navigate to 2nd view by passing id of 2nd view
+                    oAppCon.to("idView2");
+
+                },
+
+                onItemPress: function () {
+                    MessageBox.information(" Thanks for placing the order");
+                },
+
+                onDeleteItem: function (oEvent) {
+
+                    // on which event the delete was pressed..
+                    var oItem = oEvent.getParameter("listItem"); // correct parameter name
+
+                    // get object of the list conbtrol
+                    var oList = oEvent.getSource();
+
+                    // delete the item 
+                    oList.removeItem(oItem);
+                },
+
+                onSearch: function (oEvent) {
+                    // read the search value from the UI.
+                    var sSearchText = oEvent.getParameter("query");
+                    //CONSTRUCT A FILter object ( like an IF condition with operand and operator)
+                    var oFilter1 = new Filter("name", FilterOperator.Contains, sSearchText);
+                    var oFilter2 = new Filter("type", FilterOperator.Contains, sSearchText);
+
+
+                    // array of filters
+                    var aFilter = [oFilter1, oFilter2];
+
+                    // construction of a OR filter ( either of condition should be true)
+                    var oFilter = new Filter({
+                        filters: aFilter,
+                        and: false
+                    })
+                    // inject the filter object inside the list binding
+                    var oList = this.getView().byId("idList");
+                    oList.getBinding("items").filter(oFilter);
+
+                }
+            }
+        )
+    });
+
+
+```
+
+## formatter
+``` js
+
+sap.ui.define([
+
+], function () {
+    'use strict';
+    return {
+        getStatusState: function (inp) {
+            switch (inp) {
+                case 'available':
+                    return 'Success';
+                    break;
+
+                case 'Out of stock':
+                    return 'Warning';
+                    break;
+
+                case 'Discontinued':
+                    return 'Error';
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    }
+
+});
+
+```
+
+# Worklist FIORI App
+
+<img width="1193" height="625" alt="image" src="https://github.com/user-attachments/assets/72c4e051-29dd-4a14-9b9e-6d9871d4e526" />
+
+<img width="1083" height="195" alt="image" src="https://github.com/user-attachments/assets/cee17d61-c3ac-4da4-9e4a-45f4b6b165f7" />
+
+
+<img width="695" height="236" alt="image" src="https://github.com/user-attachments/assets/9091aded-dfce-473e-8fe4-d677824b75c4" />
+
+## view 1
+
+``` xml
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.plansee.coc.bc.controller.View1">
+    <!-- Put APP container control( contains other controls ) -->
+    <Page title="First View" id="idView1">
+        <content>
+            <!-- <Button text="Next Page" press="onNext"></Button> -->
+            <SearchField id="idSearch" search="onSearch"></SearchField>
+            <!-- {/fruits} - is absolute path in aggregation binding..! -->
+            <List id="idList" items="{/fruits}" mode="SingleSelectMaster" selectionChange="onSelectionChange">
+                <items>
+                    <!-- relative bindings in child items -->
+                    <ObjectListItem title="{name}" intro="{type}" number="{price}" numberUnit="{currency}" icon="{image}" id="idListItem">
+                        <firstStatus>
+                            <ObjectStatus text="{status}" state="{ path: 'status' , formatter: '.formatter.getStatusState' }"></ObjectStatus>
+                        </firstStatus>
+                    </ObjectListItem>
+                </items>
+            </List>
+        </content>
+        <headerContent>
+            <Button icon="sap-icon://initiative" press="onNext" tooltip="Navigate to next sceen"></Button>
+        </headerContent>
+    </Page>
+</mvc:View>
+
+```
+
+
+## view 2
+
+``` xml
+
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.plansee.coc.bc.controller.View2">
+    <!-- Put APP container control( contains other controls ) -->
+    <Page title="Second View" showNavButton="true" navButtonPress="onBack" id="idView2" >
+        <content >
+            <!-- <Button text="Back" press="onBack"></Button> -->
+            <ObjectHeader title="{name}" intro="{healthBenefit}" number="{price}" numberUnit="{currency}" icon="{image}">
+            </ObjectHeader>
+        </content>
+        <headerContent>
+            <!-- <Button icon="sap-icon://nav-back" press="onBack" tooltip="Navigate to last sceen"></Button> -->
+        </headerContent>
+        <footer>
+            <Toolbar >
+                <ToolbarSpacer />
+                <Button text="Save" type="Accept" press="onSave" tooltip="click to save"/>
+                <Button text="Cancel" type="Reject" press="onCancel"/>
+            </Toolbar>
+        </footer>
+    </Page>
+</mvc:View>
+
+```
+
+
+## controller1
+
+``` js
+
+//scaffolding
+sap.ui.define(
+
+    [
+        'com/plansee/coc/bc/controller/BaseController',
+        'sap/m/MessageBox',
+        'sap/ui/model/Filter',
+        'sap/ui/model/FilterOperator',
+        'com/plansee/coc/bc/util/formatter'
+    ], function (Controller, MessageBox, Filter, FilterOperator, formatter) {
+        'use strict';
+        return Controller.extend("com.plansee.coc.bc.controller.View1",
+            {
+                formatter: formatter,
+                onInit: function () {
+
+                    // alert("now we have the app contorller for fiori like app");
+
+                },
+
+                onNext: function () {
+                    // navigation is only possible between child views by parent only....!
+
+                    // step 1 : get the object of the currnet view
+                    var oView = this.getView();
+
+                    // step 2 : get the object of the parent view (App) where view1 has been added as child
+                    var oAppCon = oView.getParent();
+
+                    // step 3 : Use this container to navigate to 2nd view by passing id of 2nd view
+                    oAppCon.to("idView2");
+
+                },
+
+                onItemPress: function () {
+                    MessageBox.information(" Thanks for placing the order");
+                },
+
+                onDeleteItem: function (oEvent) {
+
+                    // on which event the delete was pressed..
+                    var oItem = oEvent.getParameter("listItem"); // correct parameter name
+
+                    // get object of the list conbtrol
+                    var oList = oEvent.getSource();
+
+                    // delete the item 
+                    oList.removeItem(oItem);
+                },
+
+                onSearch: function (oEvent) {
+                    // read the search value from the UI.
+                    var sSearchText = oEvent.getParameter("query");
+                    //CONSTRUCT A FILter object ( like an IF condition with operand and operator)
+                    var oFilter1 = new Filter("name", FilterOperator.Contains, sSearchText);
+                    var oFilter2 = new Filter("type", FilterOperator.Contains, sSearchText);
+
+
+                    // array of filters
+                    var aFilter = [oFilter1, oFilter2];
+
+                    // construction of a OR filter ( either of condition should be true)
+                    var oFilter = new Filter({
+                        filters: aFilter,
+                        and: false
+                    })
+                    // inject the filter object inside the list binding
+                    var oList = this.getView().byId("idList");
+                    oList.getBinding("items").filter(oFilter);
+
+                },
+
+                onSelectionChange: function (oEvent) {
+
+                    // get object of which item user selected in VIEW 1 ?
+                    var oSelectedItem = oEvent.getParameter("listItem");
+                    // get the address of the selected item
+                    var sPath = oSelectedItem.getBindingContextPath();
+                    // Bind the whole of 2nd view with this Path
+                    /// get obj of view 2 and get page.
+                    var oView2 = this.getView().getParent().getPage("idView2");
+                    /// perform the element Binding with VIew 2
+                    oView2.bindElement(sPath);
+
+                    // call next VIEW 2:
+                    this.onNext();
+
+                }
+            }
+        )
+    });
+```
+
+
+
+
+
 
 
