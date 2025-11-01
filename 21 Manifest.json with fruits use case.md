@@ -342,6 +342,19 @@
 
 ## Manifest.json
 
+https://sapui5.hana.ondemand.com/#/topic/be0cf40f61184b358b5faedaec98b2da
+
+<img width="1206" height="625" alt="image" src="https://github.com/user-attachments/assets/dff7c68a-291b-4abd-b798-cc9f52ed0963" />
+
+
+<img width="1872" height="966" alt="image" src="https://github.com/user-attachments/assets/6f0573f2-c696-4b8b-a86e-69f8ee397bdd" />
+
+
+
+<img width="1513" height="813" alt="image" src="https://github.com/user-attachments/assets/c4182aa6-8b29-4816-ad8a-18fbd454968e" />
+
+
+<img width="1913" height="890" alt="image" src="https://github.com/user-attachments/assets/d8c7f107-d375-471f-826c-a155b71690f2" />
 
 
 
