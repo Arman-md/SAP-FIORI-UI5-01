@@ -92,14 +92,4 @@ ex:
 <img width="730" height="785" alt="image" src="https://github.com/user-attachments/assets/641c3a7f-c438-4285-824a-4713ba70655e" />
 
 
-## Use Case
-
-
-<img width="1277" height="314" alt="image" src="https://github.com/user-attachments/assets/bebef191-8917-4809-8c8c-8ca0ee1764f7" />
-
-
-
-
-
-
 
