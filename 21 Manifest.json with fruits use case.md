@@ -704,6 +704,34 @@ sap.ui.define(
 <img width="1174" height="947" alt="image" src="https://github.com/user-attachments/assets/c736ae61-677b-4980-b4e1-d910f167663a" />
 
 
+ 
+# Master Detailed FIORI App : shows details of both views in a single Master page using class m.splitAPP
+
+<img width="1184" height="636" alt="image" src="https://github.com/user-attachments/assets/6b4b4e16-d509-4630-852f-57e9d64d9f2e" />
+
+
+<img width="1828" height="892" alt="image" src="https://github.com/user-attachments/assets/09f35bbd-dc74-45fe-b78c-fd4b3d6cd76e" />
+
+
+## Changes :
+
+<img width="993" height="211" alt="image" src="https://github.com/user-attachments/assets/f3c9b5b9-fb9c-4b73-b2bb-33173160266a" />
+
+<img width="1187" height="548" alt="image" src="https://github.com/user-attachments/assets/4e747639-f387-44f4-884b-f439aef7a8f3" />
+
+
+<img width="1775" height="916" alt="image" src="https://github.com/user-attachments/assets/b5fca0f4-2fa0-4111-a785-b8969831b900" />
+
+
+<img width="1198" height="651" alt="image" src="https://github.com/user-attachments/assets/34dae94e-ce8f-45d5-a39d-3b8cb0d362d4" />
+
+
+**Since from view 1 we go to first parent (master Pages) then from there we go to Split app and under split app, we have details page, we modify our logic like below **
+
+<img width="1131" height="313" alt="image" src="https://github.com/user-attachments/assets/c42e75fb-bb83-4d83-b231-08e9827174dd" />
+
+
+
 
 
 
