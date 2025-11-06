@@ -1,4 +1,5 @@
-<img width="609" height="345" alt="image" src="https://github.com/user-attachments/assets/804fd4ce-1a7f-4472-9ad5-cb2bde4c5742" /># 
+
+# 
 
 <img width="632" height="258" alt="image" src="https://github.com/user-attachments/assets/d2b90c07-b193-4ed9-a625-5ab10b5cc26e" />
 
@@ -9,7 +10,7 @@
 
 <img width="627" height="135" alt="image" src="https://github.com/user-attachments/assets/f3eaa1c7-64d8-4c2d-920f-80d6f5fbef67" />
 
-
+<img width="609" height="345" alt="image" src="https://github.com/user-attachments/assets/804fd4ce-1a7f-4472-9ad5-cb2bde4c5742" />
 ## Static fragments :
 
 <img width="1866" height="781" alt="image" src="https://github.com/user-attachments/assets/a29564e6-0c41-43c9-9c1e-dc55cef5eb27" />
@@ -138,7 +139,7 @@
 
 
 
-<img width="526" height="121" alt="image" src="https://github.com/user-attachments/assets/0ac9c262-e346-469a-a4db-cf1ca0dd32c8" />
+
 
 ## view2.controller.js
 
@@ -465,4 +466,4 @@ xmlns:core="sap.ui.core">
 
 
 
-
+<img width="526" height="121" alt="image" src="https://github.com/user-attachments/assets/0ac9c262-e346-469a-a4db-cf1ca0dd32c8" />
