@@ -12,3 +12,8 @@
 
 <img width="1180" height="620" alt="image" src="https://github.com/user-attachments/assets/356dc51f-7aeb-424e-b761-c4ea5c7c0c95" />
 
+# Entity type refernece
+<img width="889" height="410" alt="image" src="https://github.com/user-attachments/assets/cd402ccc-1e8f-44f2-9ee6-cce88fc4818a" />
+
+
+
