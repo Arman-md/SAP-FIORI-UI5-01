@@ -15,5 +15,18 @@
 # Entity type refernece
 <img width="889" height="410" alt="image" src="https://github.com/user-attachments/assets/cd402ccc-1e8f-44f2-9ee6-cce88fc4818a" />
 
+# FIORI Deployment options :
+
+<img width="1261" height="671" alt="image" src="https://github.com/user-attachments/assets/8715f621-3ca0-449c-9d3e-56e3799ca520" />
+
+
+<img width="1156" height="600" alt="image" src="https://github.com/user-attachments/assets/55a9199b-1b03-4415-a00e-31c3ca2b9c43" />
+
+<img width="1178" height="624" alt="image" src="https://github.com/user-attachments/assets/55e9a309-ad49-4186-ae7e-187951622499" />
+
+# First OData entity type :
+
+<img width="1634" height="669" alt="image" src="https://github.com/user-attachments/assets/981af9ab-22f6-4f3a-891c-0dab8715ef51" />
+
 
 
