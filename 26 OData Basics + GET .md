@@ -28,5 +28,24 @@
 
 <img width="1634" height="669" alt="image" src="https://github.com/user-attachments/assets/981af9ab-22f6-4f3a-891c-0dab8715ef51" />
 
+Get in JSON format
+
+``` /sap/opu/odata/sap/ZTEST_AM_AT_SAMPLE_SRV/ProductSet?$format=json ```
+
+``` /sap/opu/odata/sap/ZTEST_AM_AT_SAMPLE_SRV/ProductSet/$count  ```
+
+``` /sap/opu/odata/sap/ZTEST_AM_AT_SAMPLE_SRV/ProductSet?$select=product_id,name ```
+
+
+
+# 5 methods get created for every entity in DPC_EXT class :
+
+<img width="1436" height="676" alt="image" src="https://github.com/user-attachments/assets/2b4f201d-a4ad-4996-80b7-f285018d421c" />
+
+<img width="1495" height="942" alt="image" src="https://github.com/user-attachments/assets/dfdf4da4-c01b-4c14-b810-ef61c26734c7" />
+
+
+
+
 
 
