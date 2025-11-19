@@ -98,6 +98,12 @@ Result:
 
 ## TECHNICAL EXCEPTIONS 
 
+<img width="919" height="766" alt="image" src="https://github.com/user-attachments/assets/b3907a23-0ff3-471c-a1b5-aa069353259b" />
+
+<img width="1469" height="792" alt="image" src="https://github.com/user-attachments/assets/48317021-7a51-4b49-8356-b366633664b1" />
+
+
+
 
 
 
