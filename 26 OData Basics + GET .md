@@ -45,6 +45,58 @@ Get in JSON format
 <img width="1495" height="942" alt="image" src="https://github.com/user-attachments/assets/dfdf4da4-c01b-4c14-b810-ef61c26734c7" />
 
 
+# TOP and SKIP :
+
+``` /sap/opu/odata/sap/ZTEST_AM_AT_SAMPLE_SRV/ProductSet?$format=json&$top=2  ```
+
+<img width="1126" height="847" alt="image" src="https://github.com/user-attachments/assets/e5829020-bfcc-4cf7-9cd5-2d7acfb2aa21" />
+
+
+
+
+
+<img width="1520" height="855" alt="image" src="https://github.com/user-attachments/assets/faf7606d-cae3-4f00-8aa5-c10af55760e9" />
+
+
+# filtering :
+
+``` /sap/opu/odata/sap/ZTEST_AM_AT_SAMPLE_SRV/ProductSet?$format=json&$filter=category eq 'Mice' ```
+
+## code :
+
+
+<img width="874" height="582" alt="image" src="https://github.com/user-attachments/assets/5592bb56-4390-4ba5-af54-4e469d6c981b" />
+
+Result:
+
+<img width="1852" height="832" alt="image" src="https://github.com/user-attachments/assets/a5c6062b-3e63-4552-aed3-dcd113742149" />
+
+
+# Get product data by key
+
+``` /sap/opu/odata/sap/ZTEST_AM_AT_SAMPLE_SRV/ProductSet('HT-1060')?$format=json  ```
+
+<img width="1858" height="757" alt="image" src="https://github.com/user-attachments/assets/949a9255-1cbe-460d-8529-0ef560edc02f" />
+
+
+<img width="630" height="386" alt="image" src="https://github.com/user-attachments/assets/fc02a8ae-89f0-4413-8121-b8fc726c3d84" />
+
+# rESULT :
+
+<img width="1206" height="809" alt="image" src="https://github.com/user-attachments/assets/cb678b31-fe2d-4d7d-9a3b-bd14a76d2dc4" />
+
+# How to raise error messages in FE?
+
+## BUSINESS EXCEPTION 
+
+``` ABAP
+/iwbep/cx_mgw_busi_exception  
+/iwbep/cx_mgw_tech_exception
+
+```
+
+
+## TECHNICAL EXCEPTIONS 
 
 
 
